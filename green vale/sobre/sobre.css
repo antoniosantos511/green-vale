@@ -1,0 +1,122 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+}
+
+
+/* Seção Sobre */
+.sobre {
+    background: #f0fff0;
+    padding: 60px 5%;
+    color: #2e7d32;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #155d1c;
+}
+
+.sobre h3 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color: #1f7a29;
+    border-bottom: 3px solid #1f7a29;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sobre img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.sobre .texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item {
+    background: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-weight: 500;
+    color: #1b5e20;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre img {
+        max-width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/*FOOTER*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Conteúdo cresce */
+main {
+  flex: 1;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #2e7d32;
+  color: white;
+  padding: 20px 0;
+  margin-top: auto;
+}

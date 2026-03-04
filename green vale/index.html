@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Green Paradise - Pousada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagens/logo.png">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <div id="navbar-container"></div>
+<script src="navbar/navbar.js"></script>
+
+
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao Green Paradise</h2>
+            <p>Uma pousada simples e aconchegante, perto da natureza.</p>
+            <a href="./quartos/quartos.html" class="hero-btn">Ver Quartos</a>
+        </div>
+    </section>
+
+<section class="sobre">
+        <h2>Sobre o Green Paradise</h2>
+        <div class="sobre-conteudo">
+            <img src="../imagens/green.webp" alt="Green Paradise Hotel">
+            <div class="texto">
+                <p>O Green Paradise oferece experiências únicas de hospedagem, unindo conforto, sofisticação e contato com a natureza. Nosso objetivo é proporcionar momentos inesquecíveis a cada hóspede.</p>
+                <p>Com quartos elegantes, atendimento de qualidade e localização privilegiada, garantimos que sua estadia seja perfeita, seja para lazer ou negócios.</p>
+            </div>
+        </div>
+    </section>
+        <section class="facilidades">
+            <h2>Nossas Facilidades</h2>
+                <p>Oferecemos diversas facilidades para tornar sua estadia ainda mais especial e confortável</p>
+            <div class="facilidades-conteudo">
+            <div class="itens">
+            <div class="item">Piscinas</div>
+            <div class="item">Wi-Fi grátis</div>
+            <div class="item">Café da manhã incluso</div>
+            <div class="item">Estacionamento</div>
+            <div class="item">SPA</div>
+            </div>
+        </div>
+    </section>
+    <!-- Quartos -->
+    <section id="quartos" class="cards">
+        <h2>Quartos</h2>
+        <div class="card">
+            <img src="imagens/q1.jpg" alt="Quarto Casal">
+            <h4>Quarto Casal</h4>
+            <p>Ideal para 2 pessoas, aconchegante e funcional, oferece todo o conforto necessário para o viajante solo
+                com excelente custo-benefício.</p>
+            <p><strong>R$ 220 / noite</strong></p>
+            <button class="btn-reservar" onclick="reservarQuarto('Quarto Casal')">Reservar</button>
+        </div>
+        <div class="card">
+            <img src="imagens/q2.webp" alt="Quarto Família">
+            <h4>Quarto Família</h4>
+            <p>Até 4 hóspedes, espaçoso e confortável, ideal para Família ou amigos que buscam uma estadia tranquila com
+                ótima localização.</p>
+            <p><strong>R$ 340 / noite</strong></p>
+            <button class="btn-reservar" onclick="reservarQuarto('Quarto Família')">Reservar</button>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="gallery">
+        <h2>Galeria</h2>
+        <img src="imagens/im1.jpg" alt="Imagem 1">
+        <img src="imagens/im2.jpg" alt="Imagem 2">
+        <img src="imagens/im3.jpg" alt="Imagem 3">
+    </section>
+
+
+    <!-- passeios -->
+    <section id="passeios" class="cards-container">
+    <h1>Passeios</h1>
+    <div class="cards2">
+        <div class="card2">
+            <img src="imagens/barco.jpeg" alt="Passeio 1">
+            <h4>Passeio de Barco</h4>
+            <p>Um passeio incrível pelas águas cristalinas, ideal para quem quer relaxar e conhecer paisagens únicas.</p>
+            <p class="preco"><strong>R$ 180 / pessoa</strong></p>
+            <button class="btn-reservar" onclick="reservarQuarto('Passeio de Barco')">Reservar</button>
+        </div>
+
+        <div class="card2">
+            <img src="imagens/trilha.jpeg" alt="Passeio 2">
+            <h4>Trilha na Montanha</h4>
+            <p>Aventura perfeita para quem ama natureza, com vistas panorâmicas e contato direto com o ambiente natural.</p>
+            <p class="preco"><strong>R$ 250 / pessoa</strong></p>
+            <button class="btn-reservar" onclick="reservarQuarto('Trilha na Montanha')">Reservar</button>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Green Paradise - Todos os direitos reservados</p>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Telefone: (00) 0000-0000</p>
+            <p>Email: contato@greenparadise.com</p>
+            <p>Endereço: Rua Exemplo, 123 - Cidade</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

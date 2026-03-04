@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Reservas - Green Paradise</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="reservas.css">
+</head>
+<body>
+
+<div id="navbar-container"></div>
+<script src="../navbar/navbar.js"></script>
+
+<main class="container">
+  <h2>Nova Reserva (simulada)</h2>
+  <form class="form">
+    <label>Data de chegada</label><input type="date">
+    <label>Data de saída</label><input type="date">
+    <label>Tipo de acomodação</label>
+    <select><option>Luxo</option><option>Luxo Especial</option><option>Suíte Master</option></select>
+    <label>Hóspede principal</label><input type="text">
+    <label>Cartão (simulação)</label><input type="text" placeholder="**** **** **** ****">
+    <div style="display:flex;gap:8px;justify-content:flex-end">
+      <button type="button" onclick="alert('Reserva simulada')">Confirmar Reserva</button>
+      <button type="button" onclick="alert('Simulação: sem vagas')">Simular sem vagas</button>
+    </div>
+  </form>
+
+  <h3 style="margin-top:18px">Reservas do dia</h3>
+  <table class="table">
+    <thead><tr><th>Hóspede</th><th>Tipo</th><th>Entrada</th><th>Saída</th></tr></thead>
+    <tbody>
+      <tr><td>Ana Silva</td><td>Luxo</td><td>2025-11-25</td><td>2025-11-28</td></tr>
+      <tr><td>João Souza</td><td>Suíte Especial</td><td>2025-11-23</td><td>2025-11-24</td></tr>
+    </tbody>
+  </table>
+</main>
+
+<footer>
+  <p>© 2025 Green Paradise - Todos os direitos reservados</p>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Telefone: (00) 0000-0000</p>
+            <p>Email: contato@greenparadise.com</p>
+            <p>Endereço: Rua Exemplo, 123 - Cidade</p>
+        </section>
+</footer>
+
+</body>
+</html>

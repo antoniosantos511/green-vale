@@ -1,0 +1,14 @@
+/* same form style */
+body{font-family:Arial;background:#f4f8f4;margin:0}
+.container{max-width:700px;margin:100px auto;padding:20px;background:#fff;border-radius:8px}
+.form{display:flex;flex-direction:column;gap:10px}
+input{padding:10px;border:1px solid #ddd;border-radius:6px}
+button{background:#2e7d32;color:#fff;padding:10px;border:none;border-radius:6px;cursor:pointer}
+
+footer {
+  text-align: center;
+  background: #2e7d32;
+  color: white;
+  padding: 15px 0;
+  margin-top: 30px;
+}

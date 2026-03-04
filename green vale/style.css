@@ -1,0 +1,418 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background:#ffffff ;
+  color: #333;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .logo img {
+    height: 35px;
+    /* logo menor em telas pequenas */
+  }
+
+  nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+/* Hero */
+.hero {
+  background-image: url('imagens/pis.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-btn:hover {
+  background-color: #4caf50;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 8px 16px;
+  }
+}
+
+/* Cards/Serviços */
+.cards {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+ 
+}
+
+.card {
+  display: inline-block;
+  width: 30%;
+  background: white;
+  border: 1px solid #ddd;
+  margin: 1%;
+  padding: 10px;
+  vertical-align: top;
+  border-radius: 8px;
+}
+
+.card img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Botão Reservar */
+.btn-reservar {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-reservar:hover {
+  background-color: #4caf50;
+}
+
+/* Galeria */
+.gallery {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  
+}
+
+.gallery img {
+  width: 30%;
+  margin: 1%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  background: #2e7d32;
+  color: white;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+
+
+
+
+.sobre {
+    background: #1f7a29;
+    padding: 60px 5%;
+    color: #2e7d32;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.sobre h3 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color: #ffffff;
+    border-bottom: 3px solid #1f7a29;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sobre img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.sobre .texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item {
+    background: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre img {
+        max-width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Estilo geral da seção */
+.facilidades {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+.facilidades h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.facilidades p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Conteúdo principal */
+.facilidades-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsivo */
+    
+}
+
+/* Imagem */
+.facilidades-conteudo img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    
+}
+
+/* Itens */
+.itens {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+    
+}
+
+.item {
+    background: #00ff2a;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+    .facilidades-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item {
+        font-size: 1rem;
+    }
+}
+
+/* Container geral */
+.cards-container {
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.cards-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* Grid dos cards */
+.cards2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada card individual */
+.card2, 
+.cards2 > div {  /* cobre também seu primeiro card que não tem a classe corretamente */
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+    text-align: left;
+}
+
+/* Animação hover */
+.card2:hover,
+.cards2 > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Imagens maiores */
+.card2 img,
+.cards2 > div img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Título */
+.card2 h4,
+.cards2 > div h4 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Parágrafos */
+.card2 p,
+.cards2 > div p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Preço */
+.preco {
+    font-size: 1.15rem !important;
+    color: #111;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botão */
+.btn-reservar {
+    width: 100%;
+    padding: 12px;
+    background: #15fc00;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-reservar:hover {
+    background: #000000;
+}
+
